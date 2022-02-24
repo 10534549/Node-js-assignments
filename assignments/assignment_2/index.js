@@ -1,7 +1,9 @@
 const fs = require('fs');
 const http = require('http');
 
-fs.writeFileSync('index.html',"<h1>Hello World</h1>",err => {
+const content=`<h1>Hello world</h1>
+<p>I am Sravya Lavu</p>`;
+fs.writeFileSync('index.html',content,err => {
     console.log(err);
 });
 
